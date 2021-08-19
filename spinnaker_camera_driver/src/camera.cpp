@@ -101,7 +101,7 @@ void Camera::setNewConfiguration(const SpinnakerConfig& config, const uint32_t& 
       {
         setProperty(node_map_, "SharpeningAuto", config.auto_sharpness);
         setProperty(node_map_, "Sharpening", static_cast<float>(config.sharpness));
-        setProperty(node_map_, "SharpeningThreshold", static_cast<float>(config.sharpening_threshold));
+        //setProperty(node_map_, "SharpeningThreshold", static_cast<float>(config.sharpening_threshold));
       }
     }
 
@@ -150,9 +150,9 @@ void Camera::setNewConfiguration(const SpinnakerConfig& config, const uint32_t& 
       setProperty(node_map_, "BalanceWhiteAuto", config.auto_white_balance);
       if (config.auto_white_balance.compare(std::string("Off")) == 0)
       {
-        setProperty(node_map_, "BalanceRatioSelector", "Blue");
+        //setProperty(node_map_, "BalanceRatioSelector", "Blue");
         setProperty(node_map_, "BalanceRatio", static_cast<float>(config.white_balance_blue_ratio));
-        setProperty(node_map_, "BalanceRatioSelector", "Red");
+        //setProperty(node_map_, "BalanceRatioSelector", "Red");
         setProperty(node_map_, "BalanceRatio", static_cast<float>(config.white_balance_red_ratio));
       }
     }
