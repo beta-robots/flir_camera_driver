@@ -78,7 +78,7 @@ class SpinnakerCameraNodelet : public nodelet::Nodelet
 public:
   SpinnakerCameraNodelet()
   {
-	  std::cout << __LINE__ << std::endl;
+	  //std::cout << __LINE__ << std::endl;
   }
 
   ~SpinnakerCameraNodelet()
